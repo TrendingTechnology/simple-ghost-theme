@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- META
+  ------------------------- -->
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+  <!-- Mobile Specific Metas
+  ------------------------- -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  ------------------------- -->
+
+
+  <!-- CSS
+  ------------------------- -->
+  {{! Styles'n'Scripts }}
+  <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/skeleton.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/custom.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome.min.css"}}" />
+
+  <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
+  
+  <!-- JS
+  ------------------------- -->
+
+  <script type="text/javascript" src="{{asset "lib/index.js"}}"></script>
+  <script type="text/javascript" src="{{asset "lib/prism.js"}}"></script>
+
+
+  <!--
+
+  http://blog.davebalmer.com/adding-syntax-highlighting-to-ghost/
+
+  -- >
+
+  <!-- FAVICON
+  ------------------------- -->
+  <link rel="shortcut icon" href="{{asset "/images/favicon.ico"}}">
+  
+  {{ghost_head}}
+  </head>
+
+  <!-- BODY
+  ------------------------- -->
+      
+  <body class="{{body_class}} nav-closed">
+
+  
+		<div class="container">
+			
+			{{{body}}}
+			
+      
+
+
+      <div class="container">
+        <footer id="footer" class="twelve columns">
+		<br />
+		 <br />
+         <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> <span style="font-size: .8em; font-weight: 600;"></span> {{date format="YYYY"}}</section>
+		 <a href="https://twitter.com/OrangeePuddin"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="{{@blog.url}}/rss"><i class="fa fa-rss" aria-hidden="true"></i></a>
+		 <br />
+		 <br />
+        </footer>
+      </div> <!-- end footer div.container -->
+    </div>  <!-- end footer div.table-block -->
+  
+  {{ghost_foot}}
+</body>
+</html>
