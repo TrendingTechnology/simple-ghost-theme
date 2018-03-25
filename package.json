@@ -1,4 +1,8 @@
 {
-  "name": "kakotopia",
+  "name": "simple-ghost-theme",
   "version": "0.1.0"
+  "author":
+    {
+      "email": "me@kevingil.com"
+    }
 }

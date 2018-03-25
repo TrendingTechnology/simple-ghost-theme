@@ -3,11 +3,11 @@
   <section class="header">
       <h1 class="title">{{@blog.title}}</h1>
   </section>
-  
+
     {{navigation}}
-  
+
   {{#post}}
-  
+
   <div class="container">
   <br /><br />
       <h2>{{{title}}}</h2>
@@ -15,7 +15,7 @@
         <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
       </section>
   </div>
-  
+
   <div class="container">
   {{content}}
   </div>
@@ -32,7 +32,7 @@
 					<a class="link twitter" href="http://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"><i class="fa fa-twitter"></i></a>
 					<a class="link facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"><i class="fa fa-facebook"></i></a>
 					<a class="link reddit" href="http://www.reddit.com/submit?url={{url absolute="true"}}"><i class="fa fa-reddit"></i></a>
-					<a class="link hackernews" href="http://news.ycombinator.com/submitlink?u={{url absolute="true"}}"><i class="fa fa-hacker-news"></i></a>          
+					<a class="link hackernews" href="http://news.ycombinator.com/submitlink?u={{url absolute="true"}}"><i class="fa fa-hacker-news"></i></a>
 				</section>
 			</div>
   <br /><br />
@@ -40,7 +40,7 @@
         {{#author}}
 		<div class="row">
 			<div class="two columns">
-			<img class="authorimage" src="{{image}}">
+			<img class="authorimage" src="{{img_url}}">
 			</div>
 			<div class="four columns">
 			<h4><span class="author-name"><a href="{{url}}">{{name}}</a></span></h4>
@@ -56,7 +56,7 @@
   <div class="row">
 	<div class="six columns">
     {{#next_post}}
-    <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+    <a class="read-next-story {{#if feature_image}} {{feature_image}} {{/if}}" style="background-image: url({{img_url}}){{else}}no-cover{{/if}}" href="{{url}}">
         <section class="post">
             <h4>{{title}}</h4>
             <p>{{excerpt words="19"}}&hellip;</p>
@@ -66,7 +66,7 @@
 	</div>
 	<div class="six columns">
     {{#prev_post}}
-    <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+    <a class="read-next-story prev {{#if feature_image}} {{feature_image}} {{/if}}" style="background-image: url({{img_url}}){{else}}no-cover{{/if}}" href="{{url}}">
         <section class="post">
             <h4>{{title}}</h4>
             <p>{{excerpt words="19"}}&hellip;</p>
