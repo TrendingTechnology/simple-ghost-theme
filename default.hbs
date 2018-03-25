@@ -26,11 +26,15 @@
   <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
   <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
 
+  <link rel="stylesheet" type="text/css" href="{{asset "css/github-calendar-responsive.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/github-calendar.css"}}" />
+
   <!-- JS
   ------------------------- -->
 
   <script type="text/javascript" src="{{asset "lib/index.js"}}"></script>
   <script type="text/javascript" src="{{asset "lib/prism.js"}}"></script>
+  <script type="text/javascript" src="{{asset "lib/github-calendar.min.js"}}"></script>
 
 
   <!--
@@ -56,21 +60,23 @@
 
 			{{{body}}}
 
-
-
-
       <div class="container">
         <footer id="footer" class="twelve columns">
-		<br />
-		 <br />
-         <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> <span style="font-size: .8em; font-weight: 600;"></span> {{date format="YYYY"}}</section>
-		 <a href="https://twitter.com/OrangeePuddin"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="{{@blog.url}}/rss"><i class="fa fa-rss" aria-hidden="true"></i></a>
-		 <br />
-		 <br />
+         <section class="copyright"> <a href="{{@blog.url}}"> &copy; {{@blog.title}}</a> {{date format="YYYY"}}</section>
+           <a href="{{@blog.twitter}}">
+             <i class="fa fa-twitter" aria-hidden="true"></i>
+           </a>
+           <a href="{{@blog.facebook}}">
+             <i class="fa fa-facebook" aria-hidden="true"></i>
+           </a>
+           <a href="{{@blog.url}}/rss">
+             <i class="fa fa-rss" aria-hidden="true"></i>
+           </a>
         </footer>
       </div> <!-- end footer div.container -->
     </div>  <!-- end footer div.table-block -->
 
-  {{ghost_foot}}
-</body>
+    {{ghost_foot}}
+
+  </body>
 </html>
