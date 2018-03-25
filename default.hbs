@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
 
   <!-- META
   ------------------------- -->
@@ -23,7 +23,6 @@
   <link rel="stylesheet" type="text/css" href="{{asset "css/custom.css"}}" />
   <link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome.min.css"}}" />
 
-  <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
   <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
 
   <link rel="stylesheet" type="text/css" href="{{asset "css/github-calendar-responsive.css"}}" />
@@ -32,7 +31,6 @@
   <!-- JS
   ------------------------- -->
 
-  <script type="text/javascript" src="{{asset "lib/index.js"}}"></script>
   <script type="text/javascript" src="{{asset "lib/prism.js"}}"></script>
   <script type="text/javascript" src="{{asset "lib/github-calendar.min.js"}}"></script>
 
@@ -55,7 +53,6 @@
 
   <body class="{{body_class}} nav-closed">
 
-
 		<div class="container">
 
 			{{{body}}}
@@ -63,10 +60,10 @@
       <div class="container">
         <footer id="footer" class="twelve columns">
          <section class="copyright"> <a href="{{@blog.url}}"> &copy; {{@blog.title}}</a> {{date format="YYYY"}}</section>
-           <a href="{{@blog.twitter}}">
+           <a href="{{twitter_url}}">
              <i class="fa fa-twitter" aria-hidden="true"></i>
            </a>
-           <a href="{{@blog.facebook}}">
+           <a href="{{facebook_url}}">
              <i class="fa fa-facebook" aria-hidden="true"></i>
            </a>
            <a href="{{@blog.url}}/rss">
