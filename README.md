@@ -1,4 +1,4 @@
-# ReadMe
+# simple ghost theme
 
 This simple ghost theme is a clean, minimal, light Ghost blog theme built off the [Skeleton](http://getskeleton.com/) framework and the default Casper theme. The theme is fully responsive.
 
