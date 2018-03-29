@@ -31,6 +31,10 @@
 
   <!-- tables css by purecss -->
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/purecss@1.0.0/build/tables-min.css" />
+  <script>
+    var root = document.getElementsByTagName( 'table' ); // '0' to assign the first (and only `HTML` tag)
+    root.setAttribute( 'class', 'pure-table' );
+  </script>
 
   <!-- FAVICON -->
   <link rel="shortcut icon" href="{{asset "/images/favicon.ico"}}">
