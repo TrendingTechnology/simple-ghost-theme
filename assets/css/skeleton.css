@@ -311,12 +311,9 @@ li {
 /* Code
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 code {
-  padding: .2rem .5rem;
-  margin: 0 .2rem;
   font-size: 90%;
   white-space: nowrap;
-  background: #F1F1F1;
-  border-radius: 4px; }
+  background: #F1F1F1; }
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
@@ -325,6 +322,8 @@ pre > code {
 
 code {
   border-radius: 4px;
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
 }
 
 /* Tables
@@ -334,12 +333,11 @@ code {
 table {
     color: #333; /* Lighten up font color */
     font-family: Helvetica, Arial, sans-serif; /* Nicer font */
-    width: 640px;
-    border-collapse:
-    collapse; border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-td, th { border: 1px solid #CCC; height: 30px; } /* Make cells a bit taller */
+ /* td, th { border: 1px solid #CCC; height: 30px; } /* Make cells a bit taller */
 
 th {
     background: #F3F3F3; /* Light grey background */
