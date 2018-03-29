@@ -9,13 +9,14 @@
   <!-- Mobile Specific Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT -->
+  <!-- Pure.io -->
+  <link rel="stylesheet"
+        href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+        integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+        crossorigin="anonymous">
 
 
   <!-- CSS -->
-  {{! Styles'n'Scripts }}
-  <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" />
-  <link rel="stylesheet" type="text/css" href="{{asset "css/skeleton.css"}}" />
   <link rel="stylesheet" type="text/css" href="{{asset "css/custom.css"}}" />
   <link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome.min.css"}}" />
 
@@ -29,15 +30,10 @@
   <script type="text/javascript" src="{{asset "lib/github-widget.min.js"}}"></script>
 
   <!-- highlightjs -->
-
   <link rel="stylesheet"
     href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
-
-  <!-- Pure.io Tables -->
-  <link rel="stylesheet" stype="text/css" href="https://unpkg.com/purecss@1.0.0/build/tables-min.css"/>
-
 
   <!-- FAVICON -->
   <link rel="shortcut icon" href="{{asset "/images/favicon.ico"}}">
@@ -46,7 +42,6 @@
   </head>
 
   <!-- BODY -->
-
   <body class="{{body_class}} nav-closed">
 
 		<div class="container">

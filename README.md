@@ -20,10 +20,9 @@ Favicon can be customized in /assets/images/favicon.ico.
 
 Featured images used in post listings (index, tax pages, etc) are pulled from the metadata image. It doesn't use any width resizing, but resizes to a height of 230px. Uploading a 230x800px image is suggested for best results.
 
+
 #### Credits
 [kakotopia](https://github.com/ourdarkfuture/kakotopia) by ourdarkfuture, MIT License
-
-[Skeleton](https://github.com/dhg/Skeleton) by dave gamache, MIT License
 
 [github-calendar](https://github.com/IonicaBizau/github-calendar) by IonicaBizau, MIT License
 
