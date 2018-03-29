@@ -336,7 +336,15 @@ td:first-child {
 th:last-child,
 td:last-child {
   padding-right: 0; }
+
 */
+
+table, th, td {
+  border-collapse:collapse;
+  border-spacing:0;
+  empty-cells:show;
+  border:1px solid #cbcbcb
+}
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
