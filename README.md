@@ -24,6 +24,12 @@ Featured images used in post listings (index, tax pages, etc) are pulled from th
 #### Credits
 [kakotopia](https://github.com/ourdarkfuture/kakotopia) by ourdarkfuture, MIT License
 
+[Skeleton](https://github.com/dhg/Skeleton) by dave gamache, MIT License
+
+[dracula theme](https://github.com/dracula/highlightjs) by Dracula Theme, MIT License
+
+[pure](https://github.com/pure-css/pure/) by Yahoo! Inc, BSD License
+
 [github-calendar](https://github.com/IonicaBizau/github-calendar) by IonicaBizau, MIT License
 
 [github-widget](https://github.com/jawj/github-widget) by jawj

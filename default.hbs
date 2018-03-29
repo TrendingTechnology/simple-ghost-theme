@@ -10,10 +10,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="{{asset "css/custom.css"}}" />
   <link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome.min.css"}}" />
   <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" />
   <link rel="stylesheet" type="text/css" href="{{asset "css/skeleton.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/custom.css"}}" />
 
   <!-- GITHUB Page stuff -->
   <link rel="stylesheet" type="text/css" href="{{asset "css/github-calendar-responsive.css"}}" />
@@ -26,9 +26,12 @@
 
   <!-- highlightjs -->
   <link rel="stylesheet"
-    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    href="{{asset "css/custom.css"}}">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+
+  <!-- tables css by purecss -->
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/purecss@1.0.0/build/tables-min.css" />
 
   <!-- FAVICON -->
   <link rel="shortcut icon" href="{{asset "/images/favicon.ico"}}">
